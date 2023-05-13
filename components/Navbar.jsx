@@ -1,6 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import dynamic from 'next/dynamic';
 import { navVariants } from '../utils/motion';
 import styles from '../styles';
 
@@ -28,4 +29,4 @@ const Navbar = () => (
   </motion.nav>
 );
 
-export default Navbar;
+export default dynamic(() => Promise.resolve(Navbar), { ssr: false });

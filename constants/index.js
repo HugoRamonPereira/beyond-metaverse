@@ -72,17 +72,21 @@ export const socials = [
   {
     name: 'twitter',
     url: '/twitter.svg',
+    destination: 'https://twitter.com/HugoRamonPereir',
   },
   {
     name: 'linkedin',
     url: '/linkedin.svg',
+    destination: 'https://www.linkedin.com/in/hugo-ramon-pereira/',
   },
   {
     name: 'instagram',
     url: '/instagram.svg',
+    destination: 'https://www.instagram.com/hramon_pereira/',
   },
   {
     name: 'facebook',
     url: '/facebook.svg',
+    destination: 'https://www.facebook.com/hugoramon.pereira/',
   },
 ];
