@@ -1,6 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import dynamic from 'next/dynamic';
 import { fadeIn } from '../utils/motion';
 import styles from '../styles';
 
@@ -37,4 +38,4 @@ const ExploreCard = ({ id, imgUrl, title, index, active, handleClick }) => (
   </motion.div>
 );
 
-export default ExploreCard;
+export default dynamic(() => Promise.resolve(ExploreCard), { ssr: false });

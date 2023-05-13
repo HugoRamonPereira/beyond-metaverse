@@ -1,6 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import dynamic from 'next/dynamic';
 import { textContainer, textVariant2 } from '../utils/motion';
 
 export const TypingText = ({ title, textStyles }) => (
@@ -29,3 +30,5 @@ export const TitleText = ({ title, textStyles }) => (
     {title}
   </motion.h2>
 );
+
+export default dynamic(() => Promise.resolve(TitleText), { ssr: false });

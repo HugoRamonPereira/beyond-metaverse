@@ -1,3 +1,4 @@
+import dynamic from 'next/dynamic';
 import styles from '../styles';
 
 const NewFeatures = ({ imgUrl, title, subtitle }) => (
@@ -20,4 +21,4 @@ const NewFeatures = ({ imgUrl, title, subtitle }) => (
   </div>
 );
 
-export default NewFeatures;
+export default dynamic(() => Promise.resolve(NewFeatures), { ssr: false });
